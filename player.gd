@@ -14,7 +14,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):	
+func _physics_process(delta):
 	velocity = Vector2(
 		(Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")) * (speed+bonus),
 		(Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")) * (speed+bonus))
